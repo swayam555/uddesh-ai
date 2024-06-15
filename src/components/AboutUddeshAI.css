@@ -1,0 +1,29 @@
+.about-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.images-container {
+  display: flex;
+  gap: 20px;
+}
+
+.team-image {
+  width: calc(50% - 10px);
+  border-radius: 8px;
+}

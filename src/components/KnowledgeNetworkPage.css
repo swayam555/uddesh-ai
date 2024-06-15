@@ -1,0 +1,49 @@
+/* KnowledgeNetworkPage.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  .kn-logo {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+
+  
+  .kn-hero-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #e0e0e0;
+    background-image: url(./img/bgc2.jpg);
+  }
+  
+  .kn-hero-content p {
+    margin: 0;
+    color: #888;
+  }
+  
+  .kn-hero-content h2 {
+    font-size: 36px;
+    margin: 10px 0 0;
+  }
+  
+  .kn-job-roles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .kn-job-role-button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
