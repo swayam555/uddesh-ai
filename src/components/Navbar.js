@@ -14,7 +14,7 @@ export default class Navbar extends Component {
             <li className="navbar-item">
                 <a href="/services">Services</a>
                 <ul className="dropdown">
-                    <li><a href="/services/service1">CARRIER PREDICTION</a></li>
+                    <li><a href="http://127.0.0.1:5000">CARRIER PREDICTION</a></li>
                     <li><a href="/Course">COURSES</a></li>
                     <li><a href="/Knowledge">KNOWLEDGE NETWORK</a></li>
                     <li><a href="/Mentors">MENTORS</a></li>

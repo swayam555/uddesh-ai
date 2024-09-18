@@ -65,7 +65,8 @@
     padding: 200px;;
     background-image: url('./img/bg3333.jpg');
     background-size: cover;
-    color: white;
+    color: rgba(24, 22, 27, 0.37);
+    
   }
   
   .main-content h1 {

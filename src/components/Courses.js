@@ -1,4 +1,3 @@
-// Courses.js
 import React from 'react';
 import './Courses.css'; // Assuming you have a separate CSS file for this component
 
@@ -16,24 +15,48 @@ const HeroSection = () => {
 const Tags = () => {
   return (
     <div className="tags">
-      <button>WEB</button>
-      <button>PROGRAMMING LANGUAGES</button>
-      <button>CSS</button>
-      <button>RESPONSIVE</button>
-      <button>BOOTSTRAP</button>
-      <button>HTML</button>
-      <button>WEBSITE</button>
-      <button>BUSINESS</button>
+      <button><a href='https://www.w3schools.com/'>WEB</a></button>
+      <button><a href='https://www.coursera.org/courses?query=programming%20languages'>PROGRAMMING LANGUAGES</a></button>
+      <button><a href='https://www.w3schools.com/css/'>CSS</a></button>
+      <button><a href='https://www.freecodecamp.org/learn/2022/responsive-web-design/'>RESPONSIVE</a></button>
+      <button><a href='https://www.codecademy.com/learn/learn-bootstrap'>BOOTSTRAP</a></button>
+      <button><a href='https://www.w3schools.com/html/'>HTML</a></button>
+      <button><a href='https://www.udemy.com/topic/web-design/'>WEBSITE</a></button>
+      <button><a href='https://www.coursera.org/browse/business'>BUSINESS</a></button>
     </div>
   );
 };
 
 const Courses = () => {
   const courseList = [
-    { title: 'The Complete jQuery Course', category: 'Web Development', price: 'Free', image: 'path-to-image' },
-    { title: 'Introduction to CSS', category: 'Web Design', price: 'Free', image: 'path-to-image' },
-    { title: 'The Complete course on HTML', category: 'Web Development', price: 'Free', image: 'path-to-image' },
-    { title: 'Introduction to Bootstrap', category: 'Web Design', price: 'Free', image: 'path-to-image' },
+    { 
+      title: 'The Complete jQuery Course', 
+      category: 'Web Development', 
+      price: 'Free', 
+      image: require('./img/course01.jpg'),
+      link: 'https://www.w3schools.com/jquery/' // Add course links here
+    },
+    { 
+      title: 'Introduction to CSS', 
+      category: 'Web Design', 
+      price: 'Free', 
+      image: require('./img/course02.jpg'),
+      link: 'https://www.w3schools.com/w3css/defaulT.asp'
+    },
+    { 
+      title: 'The Complete course on HTML', 
+      category: 'Web Development', 
+      price: 'Free', 
+      image: require('./img/course03.jpg'),
+      link: 'https://www.w3schools.com/html/'
+    },
+    { 
+      title: 'Introduction to Bootstrap', 
+      category: 'Web Design', 
+      price: 'Free', 
+      image: require('./img/course04.jpg'),
+      link: 'https://www.w3schools.com/bootstrap/'
+    }
   ];
 
   return (
@@ -42,7 +65,10 @@ const Courses = () => {
       <div className="course-list">
         {courseList.map((course, index) => (
           <div key={index} className="course-item">
-            <img src={course.image} alt={course.title} />
+            {/* Wrap the image inside the <a> tag */}
+            <a href={course.link} target="_blank" rel="noopener noreferrer">
+              <img src={course.image} alt={course.title} className="course-image" />
+            </a>
             <h3>{course.title}</h3>
             <p>{course.category}</p>
             <p>{course.price}</p>
@@ -56,7 +82,6 @@ const Courses = () => {
 const App = () => {
   return (
     <div className="App">
-     
       <HeroSection />
       <Tags />
       <Courses />

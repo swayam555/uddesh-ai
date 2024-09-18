@@ -46,4 +46,69 @@ body {
     border-radius: 20px;
     font-size: 14px;
   }
+
+
+
+  .kn-job-roles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .kn-job-role-button {
+    padding: 10px 20px;
+    background-color: #937aa0c3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  .kn-hero-section {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .kn-hero-content h2 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  .kn-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .kn-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .kn-modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .kn-close-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5a5a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
   
