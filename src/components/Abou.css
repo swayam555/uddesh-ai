@@ -1,0 +1,69 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .card.left .card-image {
+    order: 1;
+  }
+  
+  .card.right .card-image {
+    order: 2;
+  }
+  
+  .card-image {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .card-image img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    flex: 2;
+    padding: 10px;
+  }
+  
+  .card-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .card-content h4 {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .card-content p {
+    margin: 10px 0;
+  }
+  
+  .linkedin-icon {
+    margin-left: 10px;
+    color: #0077b5;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    transition: color 0.3s;
+  }
+  
+  .linkedin-icon:hover {
+    color: #005582;
+  }

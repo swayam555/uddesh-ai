@@ -1,4 +1,4 @@
-/* KnowledgeNetworkPage.css */
+/* KnowledgeNetworkPage.css
 
 body {
     margin: 0;
@@ -111,4 +111,143 @@ body {
     border-radius: 4px;
   }
   
+   */
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
   
+  .kn-hero-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #e0e0e0;
+    background-image: url(./img/texture.jpg);
+  }
+  
+  .kn-hero-content p {
+    margin: 0;
+    color: #888;
+  }
+  
+  .kn-hero-content h2 {
+    font-size: 36px;
+    margin: 10px 0 0;
+  }
+  
+  .kn-job-roles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .kn-job-role-card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+  }
+  
+  .kn-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .kn-job-role-card:hover .kn-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .kn-card-front, .kn-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kn-card-front {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .kn-card-title {
+    width: 100%;
+    background-color: #d0f0c0; /* Light greenish background */
+    padding: 10px;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .kn-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .kn-card-back {
+    background-color: #f0f0f0;
+    transform: rotateY(180deg);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #d0f0c0; /* Light greenish border */
+  }
+  
+  .kn-card-back h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .kn-card-back p {
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .kn-card-back p strong {
+    color: #333;
+  }
+  
+  .kn-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .kn-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .kn-modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .kn-close-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5a5a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }

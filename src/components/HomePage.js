@@ -10,7 +10,7 @@ import member4 from './img/nit.jpg';
 import './ContactUs.css';
 import backgroundImage from './img/cta2-background.jpg';
 // import { useHistory } from 'react-router-dom';
-
+import { FaLinkedin } from 'react-icons/fa';
 
 
 const HomePage = () => {
@@ -19,21 +19,25 @@ const HomePage = () => {
           name: "Naman Chawla",
           role: "ML and Backend Developer",
           image: member1,
+           linkedin: "https://www.linkedin.com/in/naman-chawla/"
         },
         {
           name: "Nishant kr jha",
           role: "Backend Developer",
           image: member2,
+          linkedin: "https://www.linkedin.com/in/nishant-kr-jha/"
         },
         {
           name: "Mayank Bajaj",
           role: "Frontend and UI Developer",
           image: member3,
+          linkedin: "https://www.linkedin.com/in/mayank-bajaj/"
         },
         {
           name: "Nitish Kumar",
           role: "Frontend Developer",
           image: member4,
+            linkedin: "https://www.linkedin.com/in/nitish-kumar/"
         },
       ];
         // const history = useHistory(); 
@@ -50,8 +54,8 @@ const HomePage = () => {
       
       <main className="main-content">
         <h1>AI TO NAVIGATE YOUR DESTINATION</h1>
-        <p>Hi, amit!<br />Discover yourself,<br />Take the test to find the perfect role for you after Engineering</p>
-        <button className="get-started">Get Started!</button>
+        <p>Hi, USER!<br />Discover yourself,<br />Take the test to find the perfect role for you after Engineering</p>
+        <button className="get-started" onClick={() => window.location.href='http://127.0.0.1:5000/'}>Get Started!</button>
       </main>
     </div>
     <div className="about-container">
@@ -82,7 +86,10 @@ const HomePage = () => {
             <img src={member.image} alt={member.name} className="member-image" />
             <h2>{member.name}</h2>
             <p>{member.role}</p>
-            <button className="details-button">View details &raquo;</button>
+           
+            <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+            <FaLinkedin />
+            </a>
           </div>
         ))}
       </div>

@@ -2,7 +2,24 @@
     font-family: Arial, sans-serif;
   }
   
-
+  .contact-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .contact-us-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 20px;
+    border-radius: 10px;
+  }
   
   .logo {
     font-size: 24px;
@@ -78,7 +95,17 @@
     font-size: 24px;
     margin-bottom: 40px;
   }
+  .linkedin-icon {
+    color: #0077b5;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
   
+  .linkedin-icon:hover {
+    color: #005582;
+  }
   .get-started {
     background-color: #FF4081;
     color: white;

@@ -15,14 +15,14 @@ const HeroSection = () => {
 const Tags = () => {
   return (
     <div className="tags">
-      <button><a href='https://www.w3schools.com/'>WEB</a></button>
-      <button><a href='https://www.coursera.org/courses?query=programming%20languages'>PROGRAMMING LANGUAGES</a></button>
-      <button><a href='https://www.w3schools.com/css/'>CSS</a></button>
-      <button><a href='https://www.freecodecamp.org/learn/2022/responsive-web-design/'>RESPONSIVE</a></button>
-      <button><a href='https://www.codecademy.com/learn/learn-bootstrap'>BOOTSTRAP</a></button>
-      <button><a href='https://www.w3schools.com/html/'>HTML</a></button>
-      <button><a href='https://www.udemy.com/topic/web-design/'>WEBSITE</a></button>
-      <button><a href='https://www.coursera.org/browse/business'>BUSINESS</a></button>
+      <button className="styled-button"><a href='https://www.w3schools.com/'>WEB</a></button>
+      <button className="styled-button"><a href='https://www.coursera.org/courses?query=programming%20languages'>PROGRAMMING LANGUAGES</a></button>
+      <button className="styled-button"><a href='https://www.w3schools.com/css/'>CSS</a></button>
+      <button className="styled-button"><a href='https://www.freecodecamp.org/learn/2022/responsive-web-design/'>RESPONSIVE</a></button>
+      <button className="styled-button"><a href='https://www.codecademy.com/learn/learn-bootstrap'>BOOTSTRAP</a></button>
+      <button className="styled-button"><a href='https://www.w3schools.com/html/'>HTML</a></button>
+      <button className="styled-button"><a href='https://www.udemy.com/topic/web-design/'>WEBSITE</a></button>
+      <button className="styled-button"><a href='https://www.coursera.org/browse/business'>BUSINESS</a></button>
     </div>
   );
 };

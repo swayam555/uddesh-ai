@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
+import AboutUs from './components/AboutUs';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContactPage from './components/ContactPage';
 import Courses from './components/Courses';
@@ -25,7 +26,7 @@ export default class App extends Component {
         </Route> 
       <Route exact path="/" element={<HomePage/>}>
       </Route>
-      
+      <Route exact path="/about" element={<AboutUs />} />
       <Route exact path="/Course" element={<Courses/>}>
       </Route>
       <Route exact path="/Knowledge" element={<KnowledgeNetworkPage/>}>
